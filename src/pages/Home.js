@@ -53,7 +53,10 @@ function Home() {
             </div>
             <div className="hero__proof">
               <div className="hero__avatars" aria-hidden="true">
-                <span>NL</span><span>TM</span><span>WC</span><span>BR</span>
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="" loading="lazy" />
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="" loading="lazy" />
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="" loading="lazy" />
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" loading="lazy" />
               </div>
               <span>Trusted by teams in logistics, manufacturing, healthcare &amp; more</span>
             </div>

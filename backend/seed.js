@@ -16,8 +16,8 @@ const { generateSalt, hashPassword } = require('./utils/hash');
 // ---- Default admin credentials (change after first login) ----
 const ADMIN = {
   username: 'admin',
-  email:    process.env.SEED_ADMIN_EMAIL    || 'admin@ai-solutions.com',
-  password: process.env.SEED_ADMIN_PASSWORD || 'Admin@2026!',
+  email:    process.env.SEED_ADMIN_EMAIL    || 'kit24h.ismt.edu.np',
+  password: process.env.SEED_ADMIN_PASSWORD || 'Admin@234',
 };
 
 const solutions = [

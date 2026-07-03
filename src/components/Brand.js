@@ -1,19 +1,22 @@
-// Brand mark — mono wordmark + dark rounded "AI" square (DESIGN.md §Brand).
+// Brand mark — the AI-Solutions logo lockup (public/logo-lockup.png).
+// On dark surfaces it sits on a light rounded plate so it stays legible.
 import { Link } from 'react-router-dom';
 
 function Brand({ to = '/', onDark = false }) {
-  const inner = (
-    <span className="brand">
-      <span className="brand__mark">AI</span>
-      <span className="brand__word" style={onDark ? { color: 'var(--dark-fg)' } : undefined}>
-        ai-<b>solutions</b>
-      </span>
-    </span>
+  const img = (
+    <img
+      src={`${process.env.PUBLIC_URL}/logo-lockup.png`}
+      alt="AI-Solutions"
+      className={`brand__logo${onDark ? ' brand__logo--plate' : ''}`}
+      width="128"
+      height="45"
+    />
   );
-  if (!to) return inner;
+
+  if (!to) return img;
   return (
-    <Link to={to} aria-label="AI-Solutions home" style={{ textDecoration: 'none' }}>
-      {inner}
+    <Link to={to} className="brand" aria-label="AI-Solutions home">
+      {img}
     </Link>
   );
 }
