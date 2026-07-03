@@ -9,8 +9,6 @@ form. A password-protected admin area lets staff review those enquiries.
 - **Backend:** Node.js + Express (REST API)
 - **Database:** PostgreSQL
 - **AI chatbot:** Google Gemini (free tier), proxied through the backend
-- **Design system:** see [`DESIGN.md`](DESIGN.md) — warm cream surfaces, dark terminal panels,
-  a single violet accent, Inter + JetBrains Mono. All UI is derived from those tokens.
 
 ---
 
